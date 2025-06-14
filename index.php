@@ -278,7 +278,7 @@ try {
     error_log("[Sistema] 📡 Enviando requisição POST para ../utmify-pendente.php");
     
     $serverUrl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]";
-    $utmifyUrl = $serverUrl . "/pagamento/utmify-pendente.php";
+    $utmifyUrl = $serverUrl . "/utmify-pendente.php";
     error_log("[Sistema] 🔍 URL do utmify-pendente.php: " . $utmifyUrl);
     
     $ch = curl_init($utmifyUrl);

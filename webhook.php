@@ -184,7 +184,7 @@ try {
 
             // Envia para utmify.php
             $serverUrl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]";
-            $utmifyUrl = $serverUrl . "/pagamento/utmify.php";
+            $utmifyUrl = $serverUrl . "/utmify.php";
             error_log("[Webhook] 🌐 Enviando dados para URL: " . $utmifyUrl);
 
             $ch = curl_init($utmifyUrl);
