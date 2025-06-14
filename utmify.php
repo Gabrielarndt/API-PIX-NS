@@ -1,6 +1,6 @@
 <?php
-header('Content-Type: application/json');
-
+header("Access-Control-Allow-Origin: *");
+header("Content-Type: application/json");
 $utmifyApiUrl = "https://api.utmify.com.br/api-credentials/orders";
 $utmifyToken = "0QXti3XjHXlUK4Qm3Qtcz7pYCRg5LZ4MWWjg";
 $logDir = __DIR__ . '/logs';

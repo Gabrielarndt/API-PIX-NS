@@ -4,10 +4,8 @@ ini_set('display_errors', 0);
 ini_set('log_errors', 1);
 error_reporting(E_ALL);
 
-header('Access-Control-Allow-Origin: https://nubank-indenizacao.netlify.app');
-header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
-header('Access-Control-Allow-Headers: Content-Type');
-header('Content-Type: application/json');
+header("Access-Control-Allow-Origin: *");
+header("Content-Type: application/json");
 
 // Preflight
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {

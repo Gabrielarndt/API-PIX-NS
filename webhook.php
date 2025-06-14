@@ -1,6 +1,6 @@
 <?php
-header('Content-Type: application/json');
-
+header("Access-Control-Allow-Origin: *");
+header("Content-Type: application/json");
 // Habilita o log de erros
 ini_set('display_errors', 0);
 ini_set('log_errors', 1);
